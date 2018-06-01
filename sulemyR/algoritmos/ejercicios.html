@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicios de algoritmos</title>
+    </head>
+    <body>
+        <h1>Ejercicios</h1>
+        <!-- Repeta todos los espacios -->
+        <pre>
+            Inicio
+            
+
+            Fin
+        </pre>
+
+        <!-- no respta espacios -->
+        <p>
+            Inicio
+
+
+
+            Fin
+        </p>
+
+        <h2>Ejercicio horas de sueño</h2>
+        <!-- Prueba de 24 horas -->
+        <pre>
+            Inicio(dormir, despertar)
+                leer dormir
+                leer despertar
+
+                Si dormir > 12 entonces
+                    horasDormidas = (24 - dormir) + despertar
+                Sino 
+                    horasDormidas = despertar - dormir
+                Fin-si
+
+                Escribe horaDormidas
+            Fin
+        </pre>
+
+        <!-- Prueba de 12 horas -->
+        <pre>
+            Inicio(dormi, despertar)
+                leer dormir
+                leer despertar
+
+                Si dormir < despertar entonces
+                    horasDormidas = 0 - dormir
+                Sino 
+                    horasDormidas = 12 - dormir
+                Fin-si
+
+                horasDormidas = horasDormidas + despertar
+
+                Escribe horasDormidas
+            Fin
+        </pre>
+
+        <h2>Ejercicio precio de super</h2>
+        <pre>
+            Inicio(precioSal, precioAzucar, preciocCereal, precioArroz, precioHelado)
+                leer precioSal
+                leer precioAzucar
+                leer precioCereal 
+                leer precioArroz
+                leer precioHelado
+
+                total = precioSal + precioAzucar + precioCereal + precioArroz + precioHelado
+
+                Escribe total
+            Fin 
+        </pre>
+
+        <h2>Ejercicio Presupuesto</h2>
+        <pre>
+            Inicio(ingreso1, ingreso2, gasto1, gasto2, gasto3)
+                leer ingreso1
+                leer ingreso2
+                leer gasto1
+                leer gasto2
+                leer gasto3
+
+                presupuesto = (ingreso1 + ingreso2) - (gasto1 + gasto2 + gasto3)
+
+                Escribe presupuesto
+            Fin
+        </pre>
+
+        <h2>Ejercicio Herencia de nietos</h2>
+        <pre>
+            Inicio(jose, juan, herencia)
+                leer jose
+                leer juan
+                leer herencia
+
+                herenciaIndividual = (herencia / 2)
+                valorJose = jose + herenciaIndividual
+                valorJuan = juan + herenciaIndividual
+
+                valorTotal = valorJose + valorJuan
+
+                Escribe valorJose
+                Escribe valorJuan
+                Escribe valorTotal
+            Fin
+        </pre>
+
+        <h2>Ejercicio Memify</h2>
+        <pre>
+            Inicio(valor_startup)
+                leer valor_startup
+                 
+                valorIndividual = valor_startup / 2
+                iva = .16
+                valorIva = valorIndividual * iva
+
+                socio1 = valorIndividual - valorIva
+                socio2 = valorIndividual - valorIva
+
+                Escribe socio1
+                Escriba socio2
+            Fin 
+        </pre>
+
+        <h2>Ejercicio Compu Diego</h2>
+        <pre>
+            Inicio(compu)
+                leer compu
+
+                iva = .16
+                total = compu + (compu * iva)
+
+                Escribe total
+            Fin
+        </pre>
+
+        <h2>Ejercicio Restaurante</h2>
+        <pre>
+            Inicio(precio, individuos)
+                leer precio
+                leer individuos
+
+                precioPorcentaje = precio + (precio * .10)
+                precioIndividuo = precioPorcentaje / individuos
+
+                Escribe precioIndividuo
+            Fin
+        </pre>
+    </body>
+</html>
