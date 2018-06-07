@@ -6,5 +6,96 @@ DOCTYPE html>
   </head>
 
   <body>
-    
+    <h1>Ejercicios 2</h1>
+    <h2>Ejercicio de felicidad o hambre</h2>
+    <pre>
+      Inicio (Hambre, Respuesta)
+        Leer Hambre
+
+        Si Hambre = verdadero entonces
+        "Estás triste"
+        Sino
+        "Estás feliz"
+      Fin-si
+    </pre>
+    <h2>Ejercicio de Nivel de Videojuegos</h2>
+    <pre>
+      Inicio (Nivel)
+        Leer Nivel
+
+        "¿En qué nivel estás?"
+        Si nivel <= 9 entonces
+        "Eres aprendiz"
+        Si nivel > 9 and nivel < 19 entonces
+        "Eres acróbata"
+        Si nivel >= 20 entonces
+        "Eres ninja"
+      Fin-si
+    </pre>
+    <h2>Ejercicio de acceso al refrigerador</h2>
+    <pre>
+      Inicio (Nombre,Contraseña)
+      Leer Nombre
+      Leer Contraseña
+
+      Si Nombre = JeanCarlos and Contraseña = 2607 entonces
+      "Validación exitosa"
+      Sino
+      "Usuario y/o contraseña errado"
+      Fin-si
+    </pre>
+    <h2>Ejercicio de Promedio</h2>
+    <pre>
+      Inicio (Examen1, Examen2, Examen3)
+      Leer Examen1
+      Leer Examen2
+      Leer Examen3
+
+      Promedio=(examen1+examen2+examen3)/3
+      Si Promedio >= 8.5 entonces
+      "Recibiste un premio"
+      Sino
+      "Te castigaron"
+      Fin-si
+    </pre>
+    <h2>Ejercicio de horario</h2>
+    <pre>
+      Inicio (Horario)
+      Leer Horario
+
+      "¿Qué día es hoy?"
+      Según Horario sea
+      Caso evaluación: Lunes or Miércoles
+      "Hoy tienes Historia"
+      Fin-caso
+      Según Horario sea
+      Caso evaluación: Martes
+      "Hoy tienes Natación"
+      Fin-caso
+      Según Horario sea
+      Caso evaluación: Jueves
+      "Hoy tines Esgrima"
+      Fin-caso
+      Según Horario sea
+      Caso evaluación: Viernes or Sábado or Domingo
+      "Hoy descansas de las actividades"
+      Fin-caso
+
+      Fin-Según sea
+    </pre>
+    <h2>Ejercicio de Apuesta</h2>
+    <pre>
+      Inicio (shot1, shot2, shot3)
+      Leer shot1
+      Leer shot2
+      Leer shot3
+
+      Si shot1 = shot 2 or shot2 = shot3 entonces
+      "Ganaste"
+      Sino
+      "Perdiste"
+      Fin-si
+    </pre>
+
   </body>
+</html>
