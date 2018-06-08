@@ -121,6 +121,189 @@
       Fin
     </pre>
 
+<!-- Inicio de segundo ejercicio -->
+
+    <h2>Felicidad o hambre</h2>
+    <pre>
+      Inicio(hambre)
+        leer hambre
+
+        si hambre == true ENTONCES
+          Escribe "Estoy triste"
+        
+        si no
+          Escribe "Estoy feliz"
+
+        FIN-SI
+
+      Fin
+    </pre>
+
+    <h2>Nivel de videojuegos</h2>
+    <pre>
+      Inicio(nivel)
+        leer nivel
+
+        segun true sea
+
+          caso nivel >= 10 && nivel < 20
+            player  = "Acrobata"
+              escribe "Acrobata"
+          fin-caso
+
+          caso nivel >= 20
+            player = "Ninja"
+            escribe "Ninja"
+          fin-caso
+
+          default
+            player = "Aprendiz"
+            escribe "Aprendiz"
+          fin-default
+
+
+        fin-segun sea
+
+      Fin
+    </pre>
+
+    <h2>Acceso al refrigerador</h2>
+    <pre>
+      Inicio(nombre, contraseña)
+        leer nombre
+        leer contraseña
+
+        si nombre == "Tania" && contraseña == "Trickster"
+          
+          Escribe "Acceso Concedido"
+
+        si no
+
+          Escribe "Acceso Denegado"
+
+        FIN-SI
+
+      Fin
+
+    </pre>
+
+    <h2>Promedio</h2>
+    <pre>
+      Inicio(examen1, examen2, examen3)
+        leer examen1
+        leer examen2
+        leer examen3
+
+        promedioFinal = (examen1 + examen2 + examen3) / 3
+
+        segun true sea
+
+          caso promedioFinal >= 8.5
+            resultado = "premio"
+          fin-caso
+
+          caso promedioFinal >= 0 && promedioFinal > 6
+            resultado = "castigo"
+          fin-caso
+
+          default
+            resultado = "nada"
+          fin-default
+
+        fin-segun sea
+
+      Fin
+    </pre>
+
+    <h2>Horario</h2>
+    <pre>
+      Inicio(día)
+        leer día
+
+        segun true sea
+
+          caso día == lunes or miércoles
+            Escribe "historia"
+          fin-caso
+
+          caso día == martes
+            Escribe "natación"
+          fin-caso
+
+          caso día == jueves
+            Escribe "esgrima"
+
+          default
+            Escribe "día de descanso"
+          fin-default
+
+      Fin
+    </pre>
+
+    <h2>Apuesta</h2>
+    <pre>
+      Inicio(shot1, shot2, shot3)
+        leer shot1
+        leer shot2
+        leer shot3
+
+        segun true sea
+
+          caso shot1 == shot2
+            resultado = "gané"
+          fin-caso
+
+          caso shot1 == shot3
+            resultado = "gané"
+          fin-caso
+
+          caso shot2 == shot3
+            resultado = "gané"
+          fin-caso
+
+          default
+            resultado = "perdí"
+          fin-default
+
+      Fin
+
+    </pre>
+
+<!-- Inicio del terce ejercicio -->
+
+  <h2>Regaño</h2>
+  <pre>
+    Inicio(num1,num2)
+      leer num1
+      leer num2
+
+      Para contador = num1 Hasta contador >= num2 Aumenta contador = contador + 1
+        escribe contador
+      
+      fin-para
+
+    Fin
+  </pre>
+
+  <h2>Peso</h2>
+  <pre>
+    Inicio(peso, peso_ideal, cambio_de_peso)
+      leer peso
+      leer peso_ideal
+      leer cambio_de_peso
+
+      semanas = 0
+
+      Mientras peso > peso_ideal
+        peso = peso - cambio_de_peso
+        semanas = semana + 1
+      fin-mientras
+
+      Escribe semanas
+
+    Fin
+
+  </pre>
   </body>
   
 </html>
