@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title> "Ejercicios de algoritmos" </title>
+  </head>
+
+
+  <body>
+
+      <h1>Ejercicios de Algoritmos</h1>
+
+      <h2>Ejercicio de dormir</h2>
+      <pre>
+          Inicio (dormir, despertar)
+            leer dormir
+            leer despertar
+            Si dormir > 12
+              HorasDormidas= (24 - dormir ) + despertar
+            Sino
+            HorasDormidas = despertar - dormir
+            Escribe HorasDormidas
+            Fin-SI
+          Fin
+      </pre>
+
+      <h2>Ejercicio de Precio de Super</h2>
+      <pre>
+          Inicio (sal,azucar,cereal,arroz,helado)
+            leer sal
+            leer azucar
+            leer cereal
+            leer arroz
+            leer helado
+
+            PrecioDeSuper = sal + azucar + cereal + arroz + helado
+            Escribe PrecioDeSuper
+          Fin
+      </pre>
+
+      <h2>Ejercicio de Presupuesto</h2>
+      <pre>
+          Inicio (ingreso1,ingreso2,gasto1,gasto2,gasto3)
+            leer ingreso1
+            leer ingreso2
+            leer gasto1
+            leer gasto2
+            leer gasto3
+
+            DineroFinalMes = ingreso1 + ingreso2 - gasto1 - gasto2 - gasto3
+            Escribe DineroFinalMes
+          Fin
+      </pre>
+
+      <h2>Ejercicio de Herencia</h2>
+      <pre>
+          Inicio (jose,juan,herencia)
+            leer jose
+            leer juan
+            leer herencia
+            DineroTotalJose = jose + (herencia DIV 2)
+            DineroTotalJuan = juan + (herencia DIV 2)
+            DineroEntreLosDos = DineroTotalJose + DineroTotalJuan
+            Escribe DineroTotalJose
+            Escribe DineroTotalJuan
+            Escribe DineroEntreLosDos
+          Fin
+
+      </pre>
+
+      <h2>Ejercicio de Memify</h2>
+      <pre>
+          Inicio (ValorStartup)
+            leer ValorStartup
+            Socio1= (ValorStartup / 2) * 0.84
+            Socio2= Socio1
+            Escribe Socio1
+            Escribe Socio2
+
+          Fin
+
+      </pre>
+
+      <h2>Ejercicio Compu Diego</h2>
+      <pre>
+          Inicio (ValorCompu)
+            leer ValorCompu
+            ValorCompuIVA = ValorCompu * 1.16
+            Escribe ValorCompuIVA
+          Fin
+
+      </pre>
+
+      <h2>Ejercicio Restaurante</h2>
+      <pre>
+          Inicio (Precio,Individuos)
+            leer Precio
+            leer Individuos
+            CuentaPorPersona = (Precio * 1.10) / Individuos
+            Escribe CuentaPorPersona
+          Fin
+      </pre>
+
+<h1> Segundo Slide ejercicios algoritmos </h1>
+
+      <h2>Ejercicio Felicidad o Hambre</h2>
+      <pre>
+        Inicio (Hambre)
+          leer Hambre
+          SI Hambre Entonces
+            Escribe "Tengo hambre y estoy triste"
+          SINO
+            Escribe "Estoy Feliz"
+          Fin-SI
+        Fin
+      </pre>
+
+      <h2>Ejercicio Nivel de Videojuegos</h2>
+      <pre>
+        Inicio (nivel)
+          leer nivel
+          SI nivel < 10 Entonces
+            Escribe "Eres nivel Aprendiz"
+          SINO    10 <= nivel  and  nivel < 20
+            Escribe "Eres nivel Acrobata"
+          SINO
+            Escribe "Eres nivel ninja"
+          Fin-SI
+        Fin
+      </pre>
+
+      <h2>Ejercicio Acceso al refrigerador</h2>
+      <pre>
+        Inicio (nombre,contraseña)
+          leer nombre
+          leer contraseña
+          MiNombreOk = Antonio Ibarra
+          ContraseñaOK = 123456
+          SI nombre==MiNombreOK and Contraseña==ContraseñaOK Entonces
+            Escribe "Bienvenido Antonio Ibarra"
+            Abre Refrigerador
+          SINO
+            Escribe "Intenta de nuevo"
+          Fin-SI
+        Fin
+      </pre>
+
+      <h2>Ejercicio Promedio</h2>
+      <pre>
+          Inicio (examen1,examen2,examen3)
+            leer examen1
+            leer examen2
+            leer examen3
+            Promedio = (examen1 + examen2 + examen3) / 3
+            SI Promedio >= 8.5 Entonces
+              Escribe "Tu papa te dara un premio"
+            SINO examen1 < 6 OR examen2 < 6 OR examen3 < 6
+              Escribe "Tu papa te castigara"
+            SINO
+              Escribe "Sigue esforzandote para obtener un premio"
+            Fin-SI
+          Fin
+      </pre>
+
+      <h2> Ejercicio Horario</h2>
+      <pre>
+          Inicio (DiaDeLaSemana)
+            leer DiaDeLaSemana
+            SI DiaDeLaSemana = Lunes OR DiaDeLaSemana = Miercoles Entonces
+              Escribe "Vas a clase de Historia"
+            SINO DiaDeLaSemana = Martes
+              Escribe " Vas a clase de natacion"
+            SINO DiaDeLaSemana = Jueves
+              Escribe "Vas a clase de esgrima"
+            SINO
+              Escribe "No tienes clases, toca descanso"
+            Fin-SI
+          Fin
+      </pre>
+
+      <h2> Ejercicio Apuesta</h2>
+      <pre>
+          Inicio (shot1,shot2,shot3)
+            leer shot1
+            leer shot2
+            leer shot3
+            SI shot1 == shot2 OR shot1 == shot3 OR shot2 == shot3
+              Escribe "Ganaste"
+            SINO
+              Escribe "No eres ganador, sigue intentando"
+            Fin-SI
+          Fin
+      </pre>
+
+
+<h1> Tercer Slide ejercicios algoritmos </h1>
+
+      <h2> Ejercicio Regaño</h2>
+      <pre>
+        Inicio (num1,num2)
+          leer num1
+          leer num2
+          PARA contador = num1 HASTA num1 == num2 AUMENTA  contador++
+            Escribe "contador"
+          Fin-PARA
+        Fin
+
+      </pre>
+
+        <h2> Ejercicio Peso</h2>
+        <pre>
+          Inicio (Peso,PesoIdeal)
+            leer Peso
+            leer PesoIdeal
+            CambioPeso = Peso - PesoIdeal
+            NumSemanas = CambioPeso
+            Escribe NumSemanas
+          Fin
+
+        </pre>
+
+
+  </body>
+
+
+
+</html>

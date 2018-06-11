@@ -3,121 +3,311 @@
   <head>
     <title>Pseudo Código</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h3>Ejercicio de dormid</h3>
-    <pre>
-      Inicio(dormir, despertar)
-        leer dormir
-        leer despertar
+    <h1>Ejercicios</h1>
+    <div class="column column--2">
+      <h3>Ejercicio de dormir</h3>
+      <pre>
+        Inicio(dormir, despertar)
+          leer dormir
+          leer despertar
 
-        si dormir > 12
-            horasDormidas = (24 - dormir) + despertar
-        Sino
-            horasDormidas = despertar - dormir
-        fin-si
+          si dormir > 12
+              horasDormidas = (24 - dormir) + despertar
+          Sino
+              horasDormidas = despertar - dormir
+          fin-si
 
-        Escribe horasDormidas
-      Fin
-    </pre>
+          Escribe horasDormidas
+        Fin
+      </pre>
+    </div>
 
-    <h3>Precio del super</h3>
-    <pre>
-      Inicio(sal, azucar, cereal, arroz, helado)
-        leer sal
-        leer azucar
-        leer cereal
-        leer arroz
-        leer helado
+    <div class="column column--2">
+      <h3>Precio del super</h3>
+      <pre>
+        Inicio(sal, azucar, cereal, arroz, helado)
+          leer sal
+          leer azucar
+          leer cereal
+          leer arroz
+          leer helado
 
-        precioSuper = sal + azur + cereal + arroz + helado
+          precioSuper = sal + azur + cereal + arroz + helado
 
-        Escribe precioSuper
-      Fin
-    </pre>
+          Escribe precioSuper
+        Fin
+      </pre>
+    </div>
 
-    <h3>Presupuesto</h3>
-    <pre>
-      Inicio(ingreso1, ingreso2, gasto1, gasto2, gasto3)
-        leer ingreso1
-        leer ingreso2
-        leer gasto1
-        leer gasto2
-        leer gasto3
+    <div class="column column--3">
+      <h3>Presupuesto</h3>
+      <pre>
+        Inicio(ingreso1, ingreso2, gasto1, gasto2, gasto3)
+          leer ingreso1
+          leer ingreso2
+          leer gasto1
+          leer gasto2
+          leer gasto3
 
-        presupuesto = (ingreso1 + ingreso2) - (gasto1 + gasto2 + gasto3)
+          presupuesto = (ingreso1 + ingreso2) - (gasto1 + gasto2 + gasto3)
 
-        Escribe presupuesto
+          Escribe presupuesto
 
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
 
-    <h3>Herencia de nietos</h3>
-    <pre>
-      Inicio(juan, jose, herencia)
-        leer juan
-        leer jose
-        leer herencia
+    <div class="column column--3">
+      <h3>Herencia de nietos</h3>
+      <pre>
+        Inicio(juan, jose, herencia)
+          leer juan
+          leer jose
+          leer herencia
 
-        herenciaIndividual = herencia/2
+          herenciaIndividual = herencia/2
 
-        herenciaJuan = juan + herenciaIndividual
-        herenciaJose = jose + herenciaIndividual
-        totalDinero = herenciaJuan + herenciaJose
+          herenciaJuan = juan + herenciaIndividual
+          herenciaJose = jose + herenciaIndividual
+          totalDinero = herenciaJuan + herenciaJose
 
-        escribe herenciaJuan
-        escribe herenciaJose
-        escribe totalDinero
+          escribe herenciaJuan
+          escribe herenciaJose
+          escribe totalDinero
 
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
 
-    <h3>Memify</h3>
-    <pre>
-      Inicio(valor_startup)
-        leer valor_startup
+    <div class="column column--3">
+      <h3>Memify</h3>
+      <pre>
+        Inicio(valor_startup)
+          leer valor_startup
 
 
-        valorPerCapita = valor_startup / 2
-        iva = .16
-        valorIvaPerCapita = valorPerCapita * iva
-        valorFinal = valorPerCapita - valorIvaPerCapita
+          valorPerCapita = valor_startup / 2
+          iva = .16
+          valorIvaPerCapita = valorPerCapita * iva
+          valorFinal = valorPerCapita - valorIvaPerCapita
 
-        escribe valorFinal
-      Fin
-    </pre>
+          escribe valorFinal
+        Fin
+      </pre>
+    </div>
 
-    <h3>Compu Diego</h3>
-    <pre>
-      Inicio(compu)
+    <div>
+      <h3>Compu Diego</h3>
+      <pre>
+        Inicio(compu)
 
-        leer compu
+          leer compu
 
-        valorCompu = compu
-        iva = .16
+          valorCompu = compu
+          iva = .16
 
-        totalPagar = valorCompu + ( valorCompu * iva)
+          totalPagar = valorCompu + ( valorCompu * iva)
 
-        escribe totalPagar
+          escribe totalPagar
 
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
 
-    <h3>Restaurante</h3>
-    <pre>
-      Inicio(precio, individuos)
-        leer precio
-        leer individuos
+    <div>
+      <h3>Restaurante</h3>
+      <pre>
+        Inicio(precio, individuos)
+          leer precio
+          leer individuos
 
-        propina = 1.10
+          propina = 1.10
 
-        pagoIndividual = precio / individuos
-        pagoIndividualConPropina = pagoIndividual * propina
+          pagoIndividual = precio / individuos
+          pagoIndividualConPropina = pagoIndividual * propina
 
-        escribe pagoIndividual
-        escribe pagoIndividualConPropina
+          escribe pagoIndividual
+          escribe pagoIndividualConPropina
 
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
+
+    <h2>Ejercicios nivel 2</h2>
+
+    <div>
+      <h3>Felicidad o hambre</h3>
+      <pre>
+        Inicio(hambre)
+          leer hambre
+
+          si hambre == true
+            escribe "Estoy triste"
+
+          sino
+            escribe "Estoy feliz"
+          fin-si
+        fin
+      </pre>
+    </div>
+
+    <div>
+      <h3>Nivel de videojuegos</h3>
+      <pre>
+        Inicio(nivel)
+          leer nivel
+
+          segun true sea
+            caso nivel >= 10 && nivel < 20
+              range = "acrobata"
+            fin-caso
+
+            caso nivel >= 20
+              range = "ninja"
+            fin-caso
+
+            default
+              range = "noob"
+            fin-default
+
+          fin-Segun sea
+
+          escribe "Tu rango es: " range
+        fin
+      </pre>
+    </div>
+
+    <div>
+      <h3>Acceso al refrigerador</h3>
+      <pre>
+          Inicio(nombre,contraseña)
+           leer nombre
+           leer contraseña
+
+            si nombre == "Jonathan" && contraseña == 23452
+              escribre "Come"
+
+            si no
+              escribre "no te robes comida"
+
+            fin-si
+
+          Fin
+      </pre>
+    </div>
+
+    <div>
+      <h3>Promedio</h3>
+      <pre>
+        Inicio(examen1,examen2,examen3)
+          leer examen1
+          leer examen2
+          leer examen3
+
+          promedio = (examen1 + examen2 + examen3) / 3
+
+          segun true sea
+            caso promedio >= 8.5
+              premio = "escoger"
+            fin-caso
+
+            caso promedio < 6
+              premio = "hay castigo"
+            fin-caso
+
+            default
+              premio = "chido, no hay premio"
+            fin-defult
+          fin segun-sea
+
+          escribre premio
+
+        fin
+      </pre>
+    </div>
+
+    <div>
+      <h3>Clases</h3>
+      <pre>
+        Inicio(dia)
+          leer dia
+
+          segun true sea
+            caso dia == "Lunes"
+              clase == "Historia"
+            fin-caso
+
+            caso dia == "Martes"
+              clase == "Natación"
+            fin-caso
+
+            caso dia == "Miercoles"
+              clase == "Historia"
+            fin-caso
+
+            caso dia == "Jueves"
+              clase == "Esgrima"
+            fin-caso
+
+            default
+              clase == "No tienes clase"
+            fin-default
+          fin segunsea
+
+          escribe = clase
+        Fin
+      </pre>
+    </div>
+
+    <div>
+      <h3>Apuesta</h3>
+      <pre>
+        Inicio(shot1, shot2, shot3)
+          leer shot1
+          leer shot2
+          leer shot3
+
+          segun true sea
+            caso shot1 == shot2
+              escribe "gane"
+            fin-caso
+
+            caso shot1 == shot3
+              escribe "gane"
+            fin-caso
+
+            caso shot2 == shot3
+              escribe "Ganaste"
+            fin-caso
+
+            default
+              escribe "Perdiste"
+            fin-defult
+          fin segun sea
+        Fin
+      </pre>
+    </div>
+
+    <h2>Ejercicios nivel 3</h2>
+
+    <div>
+      <h3>Regaño</h3>
+      <pre>
+          Inicio(num1, num2)
+            leer num1
+            leer num2
+
+            contador = num1
+
+            mientras contador <= num2 encontes
+              escribe contador
+              contador = contador + 1
+            fin mientras
+          Fin
+      </pre>
+    </div>
   </body>
 </html>

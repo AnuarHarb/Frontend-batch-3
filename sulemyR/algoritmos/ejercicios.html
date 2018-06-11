@@ -144,9 +144,162 @@
                 leer individuos
 
                 precioPorcentaje = precio + (precio * .10)
-                precioIndividuo = precioPorcentaje / individuos
+                precioIndividual = precioPorcentaje / individuos
 
-                Escribe precioIndividuo
+                Escribe precioIndividual
+            Fin
+        </pre>
+
+        <h2>Ejercicio Felicidad o Hambre</h2>
+        <pre>
+            Inicio(hambre)
+                leer hambre
+
+                Si hambre = false Entonces
+                    Escribe "feliz"
+                Sino 
+                    Escribe "triste"
+                Fin-Si
+            Fin
+        </pre>
+
+        <h2>Ejercicio Nivel de VideoJuegos</h2>
+        <pre>
+            Inicio(nivel)
+                leer(nivel)
+
+                Segun true Sea
+                    caso (nivel >= 10 and nivel < 20): 
+                        Escribe "Acrobata" 
+                    fin-caso
+                    caso (nivel > 20):
+                        Escribe "ninja"
+                    default:
+                        Escribe "Aprendiz"
+                    fin-caso
+                Fin-Segun-Sea
+            Fin
+        </pre>
+
+        <h2>Ejercicio Acceso al refrigerador</h2>
+        <pre>
+            Inicio(nombre, contraseña)
+                leer nombre
+                leer contraseña
+
+                nombreCorrecto = "Sulemy"
+                contraseñaCorrecta = 123
+
+                Si nombre = nombreCorrecto and contraseña = contraseñaCorrecta
+                    Escribe "El nombre y la contraseña es correcta"
+                Sino 
+                    Si nombre != nombreCorrecto
+                        Escribe "El nombre es incorrecto"
+                    Fin-Si
+                    Si contraseña != contraseñaCorrecta
+                        Escribe "La contraseña es incorrecta"
+                    Fin-Si
+                Fin-Si
+            Fin
+        </pre>
+
+        <h2>Ejercicio Promedio</h2>
+        <pre>
+            Inicio(examen1, examen2, examen3)
+                leer examen1
+                leer examen2
+                leer examen3
+
+                promedio = (examen1 + examen2 + examen3)/3
+
+                Si promedio >= 8.5 Entonces
+                    Escribe "Recibiras un premio"
+                Sino 
+                    Escribe "Recibiras un castigo"
+                Fin-Si
+            Fin
+        </pre>
+
+        <h2>Ejercicio Horario</h2>
+        <pre>
+            Inicio(horario)
+                leer horario
+
+                Segun horario Sea
+                    Caso "Lunes":
+                        Escribe "Voy a historia"
+                    Fin-Caso
+                    Caso "Miercoles":
+                        Escribe "Voy a historia"
+                    Fin-Caso
+                    Caso "Martes": 
+                        Escribe "Voy a natación"
+                    Fin-Caso
+                    Caso "Jueves":
+                        Escribe "Voy a esgrima"
+                    Fin-Caso
+                    default:
+                        Escribe "Voy a descansar"
+                    Fin-Caso
+                Fin-Segun-Sea
+            Fin
+        </pre>
+
+        <h2>Ejercicio Apuesta</h2>
+        <pre>
+            Inicio(shot1, shot2, shot3)
+                leer shot1
+                leer shot2
+                leer shot3
+
+                Segun true Sea
+                    Caso shot1 = shot2:
+                        Escribe "Ganaste"
+                    Fin-Caso
+                    Caso shot1 = shot3:
+                        Escribe "Ganaste"
+                    Fin-Caso
+                    Caso shot2 = shot3:
+                        Escribe "Ganaste"
+                    Fin-Caso
+                    default:
+                        Escribe "Perdiste"
+                    Fin-Caso
+                Fin-Segun-Sea
+            Fin
+        </pre>
+
+        <h2>Ejercicio Regaño</h2>
+        <pre>
+            Inicio(num1, num2)
+
+                leer num1
+                leer num2
+
+                contador = num1
+
+                Mientras contador <= num2 Entonces 
+                    Escribe contador
+                    contador = contador + 1
+                Fin-Mientras
+
+            Fin
+        </pre>
+
+        <h2>Ejercicio Peso</h2>
+        <pre>
+            Inicio(peso, peso_ideal, cambio_de_peso)
+                leer peso
+                leer peso_ideal
+                leer cambio_de_peso
+
+                semanas = 0
+
+                Para contador = peso Hasta contador = peso_ideal Disminuye contador = contador - cambio_de_peso
+                    semanas = semanas + 1
+                Fin-Para
+
+                Escribe semanas
             Fin
         </pre>
     </body>

@@ -1,0 +1,21 @@
+html {
+  font-size: 16px;
+}
+
+li {
+  color: orange;
+}
+
+#miPrimerId {
+  list-style:lower-greek;
+}
+
+.mascota {
+  font-size: 20px;
+  font-family: arial; 
+}
+
+.mascota:hover {
+  color: red;
+  cursor:e-resize;
+}
