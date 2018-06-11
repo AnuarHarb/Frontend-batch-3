@@ -1,0 +1,45 @@
+html {
+  front-size:16 px
+}
+
+li {
+  color: red;
+  border: 10px solid pink
+  padding: 10px;
+  margin: 20px;
+  display:inline-inline-block;
+}
+
+#miprimerId {
+  list-style: lower-roman;
+}
+
+.lista {
+  font-size: 25px;
+  font-family: 'Jua', sans-serif;
+}
+
+.lista:hover {
+  color: black;
+  cursor: grabbing;
+}
+
+p {
+  color: blue;
+  font-weight: bold;
+  font-family: 'Jua', sans-serif;
+}
+
+h1 {
+  color: pink;
+  font-stretch: ultra-condensed;
+}
+
+h2 {
+
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
