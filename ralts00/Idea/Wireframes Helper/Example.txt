@@ -1,0 +1,11 @@
+auth-signup
+
+  Title: "Regístrate"
+
+  Input[text]: "Correo electrónico"
+
+  Input[password]: "Contraseña"
+
+  Link[center]: "Ya tengo cuenta" to login
+
+  Boton[bottom, full, center]: "Crear mi cuenta" to auth.emailWelcome

@@ -1,0 +1,43 @@
+html {
+  font-size: 5px;
+}
+
+body {
+  font-size: 13px;
+  font-family: arial,sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 6rem;
+  margin-top: 3rem;
+}
+
+header > * {
+  margin-left: 3rem;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.photoUser {
+  padding: 0;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.photoUser:active, .photoUser:focus {
+  outline: none;
+  cursor: pointer;
+}
