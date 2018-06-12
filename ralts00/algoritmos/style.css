@@ -1,0 +1,57 @@
+html {
+  font-size: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  margin: 10rem;
+  color: #485667;
+}
+
+h1 {
+  color: #4990E2;
+  margin-bottom: 8rem;
+}
+
+h3 {
+  border-bottom: 1px solid #BDD0E1;
+  padding-bottom: 3rem;
+  display: inline-block;
+  width: 50%;
+}
+
+pre {
+  background-color: #233239;
+  padding: 4rem;
+  color: #EAFFFF;
+  border-radius: 1rem;
+}
+
+.column {
+  display: inline-block;
+  margin: 0 4rem;
+  vertical-align: top;
+  margin-bottom: 10rem;
+}
+
+.column pre {
+  white-space: pre-wrap;
+  font-size: 2.5rem;
+}
+
+.column--2 {
+  width: 45%;
+}
+
+.column--2 pre {
+  min-height: 36rem;
+}
+
+.column--3 {
+  width: 30%;
+}
+
+.column--3 pre {
+  min-height: 55rem;
+}
