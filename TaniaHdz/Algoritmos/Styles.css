@@ -1,0 +1,52 @@
+h1 {
+  font-family: 'Delius Unicase', cursive, arial;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  display: block;
+  background-color: black;
+  padding: 10px;
+  margin: 0; 
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #A52A2A;
+  background-color: #DCDCDC;
+  border: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 25px;
+  vertical-align: middle;
+}
+
+.ejercicios {
+  font-family: 'Delius Unicase', cursive, arial;
+  font-size: 15px;
+  background-color: #E0FFFF;
+  display: inline-block;
+  vertical-align: top;
+  border: 25px;
+  padding: 25px;
+  margin: 25px;
+  height: 500px;
+}
+
+.column-2 {
+  width: 42%;
+}
+
+.column-3{
+  width: 25%;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: 'Delius Unicase', cursive, arial;
+  font-size: 10px;
+}
+
+body {
+    background-color: #008B8B;
+}
