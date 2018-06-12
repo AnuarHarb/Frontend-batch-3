@@ -4,306 +4,327 @@
 <html>
 
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Styles.css">
     <meta charset="utf-8">
     <title>Ejercicios de Algoritmos</title>
   </head>
   <body>
+
     <h1>Ejercicios</h1>
-    <pre>
-      Inicio(dormir, despertar)
-        leer dormir
-        leer despertar
 
-        Si dormir > 12 
-          HorasDormidas = (24 - dormir) + despertar
-        Sino
-          HorasDormidas = despertar - dormir
-        fin-si
+    <div class="ejercicios column-2">
+      <h2>Horas de dormir</h2>
+      <pre>
+        Inicio(dormir, despertar)
+          leer dormir
+          leer despertar
 
-        Escribe HorasDormidas
-      Fin
-    </pre>
+          Si dormir > 12 
+            HorasDormidas = (24 - dormir) + despertar
+          Sino
+            HorasDormidas = despertar - dormir
+          fin-si
 
-    <h2>Precio del super</h2>
-    <pre>
-      Inicio(sal, azúcar, cereal, arroz, helado) 
-        leer sal
-        leer azúcar
-        leer cereal
-        leer arroz
-        leer helado
+          Escribe HorasDormidas
+        Fin
+      </pre>
+    </div>
+    
 
-        PrecioSuper = sal + azúcar + cereal + arroz + helado
+    <div class="ejercicios column-2">
+      <h2>Precio del super</h2>
+      <pre>
+        Inicio(sal, azúcar, cereal, arroz, helado) 
+          leer sal
+          leer azúcar
+          leer cereal
+          leer arroz
+          leer helado
 
-        Escribe PrecioSuper 
+          PrecioSuper = sal + azúcar + cereal + arroz + helado
 
-      Fin
-    </pre>
+          Escribe PrecioSuper 
 
-    <h2>Presupuesto</h2>
-    <pre>
-      Inicio(ingreso1, ingreso2, gasto1, gasto2, gasto3)
-        leer ingreso1
-        leer ingreso2
-        leer gasto1
-        leer gasto2
-        leer gasto3
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios column-3">
+      <h2>Presupuesto</h2>
+      <pre>
+        Inicio(ingreso1, ingreso2, gasto1, gasto2, gasto3)
+          leer ingreso1
+          leer ingreso2
+          leer gasto1
+          leer gasto2
+          leer gasto3
 
-        Presupuesto = (ingreso1 + ingreso2) - (gasto1 + gasto2 + gasto3)
+          Presupuesto = (ingreso1 + ingreso2) - (gasto1 + gasto2 + gasto3)
 
-        Escribe Presupuesto
+          Escribe Presupuesto
 
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios column-3">
+      <h2>Herencia de Nietos</h2>
+      <pre>
+        Inicio(jose, juan, herencia)
+          leer jose
+          leer juan
+          leer herencia
 
-    <h2>Herencia de Nietos</h2>
-    <pre>
-      Inicio(jose, juan, herencia)
-        leer jose
-        leer juan
-        leer herencia
+          TotalDinero = jose + juan + herencia
+          TotalJuan = juan + (herencia/2)
+          TotalJose = jose + (herencia/2)
 
-        TotalDinero = jose + juan + herencia
-        TotalJuan = juan + (herencia/2)
-        TotalJose = jose + (herencia/2)
+          Escribe TotalDinero
+          Escribe TotalJuan
+          Escribe TotalJose
 
-        Escribe TotalDinero
-        Escribe TotalJuan
-        Escribe TotalJose
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios column-3">
+      <h2>Compu Diego</h2>
+      <pre>
+        Inicio(compu)
+          leer compu
 
-      Fin
-    </pre>
+          PrecioCompu = compu
+          IVA = .16
+          CompuIVA = PrecioCompu * IVA
+          TotalCompu = PrecioCompu + CompuIVA
 
-    <h2>Memify</h2>
-    <pre>
-      Inicio(valor_startup)
-        leer valor_startup
+          Escribre TotalCompu
 
-        ValorSocio = valor_startup/2
-        IVA = .16
-        ValorIVA = ValorSocio * IVA
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios">
+      <h2>Restaurante</h2>
+      <pre>
+        Inicio(precio, individuos)
+          leer precio
+          leer individuos
 
-        Escribe ValorSocio
-        Escribe ValorIVA
+          Propina = 1.10
+          PagoIndividual = precio/individuos
+          PagoPropina = PagoIndividual * Propina
 
-      Fin
+          Escribe PagoIndividual
+          Escribe PagoPropina
 
-    </pre>
-
-    <h2>Compu Diego</h2>
-    <pre>
-      Inicio(compu)
-        leer compu
-
-        PrecioCompu = compu
-        IVA = .16
-        CompuIVA = PrecioCompu * IVA
-        TotalCompu = PrecioCompu + CompuIVA
-
-        Escribre TotalCompu
-
-      Fin
-    </pre>
-
-    <h2>Restaurante</h2>
-    <pre>
-      Inicio(precio, individuos)
-        leer precio
-        leer individuos
-
-        Propina = 1.10
-        PagoIndividual = precio/individuos
-        PagoPropina = PagoIndividual * Propina
-
-        Escribe PagoIndividual
-        Escribe PagoPropina
-
-      Fin
-    </pre>
+        Fin
+      </pre>
+    </div>
+    
 
 <!-- Inicio de segundo ejercicio -->
+    <div class="ejercicios">
+      <h2>Felicidad o hambre</h2>
+      <pre>
+        Inicio(hambre)
+          leer hambre
 
-    <h2>Felicidad o hambre</h2>
-    <pre>
-      Inicio(hambre)
-        leer hambre
-
-        si hambre == true ENTONCES
-          Escribe "Estoy triste"
-        
-        si no
-          Escribe "Estoy feliz"
-
-        FIN-SI
-
-      Fin
-    </pre>
-
-    <h2>Nivel de videojuegos</h2>
-    <pre>
-      Inicio(nivel)
-        leer nivel
-
-        segun true sea
-
-          caso nivel >= 10 && nivel < 20
-            player  = "Acrobata"
-              escribe "Acrobata"
-          fin-caso
-
-          caso nivel >= 20
-            player = "Ninja"
-            escribe "Ninja"
-          fin-caso
-
-          default
-            player = "Aprendiz"
-            escribe "Aprendiz"
-          fin-default
-
-
-        fin-segun sea
-
-      Fin
-    </pre>
-
-    <h2>Acceso al refrigerador</h2>
-    <pre>
-      Inicio(nombre, contraseña)
-        leer nombre
-        leer contraseña
-
-        si nombre == "Tania" && contraseña == "Trickster"
+          si hambre == true ENTONCES
+            Escribe "Estoy triste"
           
-          Escribe "Acceso Concedido"
+          si no
+            Escribe "Estoy feliz"
 
-        si no
+          FIN-SI
 
-          Escribe "Acceso Denegado"
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios">
+      <h2>Nivel de videojuegos</h2>
+      <pre>
+        Inicio(nivel)
+          leer nivel
 
-        FIN-SI
+          segun true sea
 
-      Fin
+            caso nivel >= 10 && nivel < 20
+              player  = "Acrobata"
+                escribe "Acrobata"
+            fin-caso
 
-    </pre>
+            caso nivel >= 20
+              player = "Ninja"
+              escribe "Ninja"
+            fin-caso
 
-    <h2>Promedio</h2>
-    <pre>
-      Inicio(examen1, examen2, examen3)
-        leer examen1
-        leer examen2
-        leer examen3
+            default
+              player = "Aprendiz"
+              escribe "Aprendiz"
+            fin-default
 
-        promedioFinal = (examen1 + examen2 + examen3) / 3
 
-        segun true sea
+          fin-segun sea
 
-          caso promedioFinal >= 8.5
-            resultado = "premio"
-          fin-caso
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios">
+      <h2>Acceso al refrigerador</h2>
+      <pre>
+        Inicio(nombre, contraseña)
+          leer nombre
+          leer contraseña
 
-          caso promedioFinal >= 0 && promedioFinal > 6
-            resultado = "castigo"
-          fin-caso
+          si nombre == "Tania" && contraseña == "Trickster"
+            
+            Escribe "Acceso Concedido"
 
-          default
-            resultado = "nada"
-          fin-default
+          si no
 
-        fin-segun sea
+            Escribe "Acceso Denegado"
 
-      Fin
-    </pre>
+          FIN-SI
 
-    <h2>Horario</h2>
-    <pre>
-      Inicio(día)
-        leer día
+        Fin
 
-        segun true sea
+      </pre>
+    </div>
+    
+    <div class="ejercicios">
+      <h2>Promedio</h2>
+      <pre>
+        Inicio(examen1, examen2, examen3)
+          leer examen1
+          leer examen2
+          leer examen3
 
-          caso día == lunes or miércoles
-            Escribe "historia"
-          fin-caso
+          promedioFinal = (examen1 + examen2 + examen3) / 3
 
-          caso día == martes
-            Escribe "natación"
-          fin-caso
+          segun true sea
 
-          caso día == jueves
-            Escribe "esgrima"
+            caso promedioFinal >= 8.5
+              resultado = "premio"
+            fin-caso
 
-          default
-            Escribe "día de descanso"
-          fin-default
+            caso promedioFinal >= 0 && promedioFinal > 6
+              resultado = "castigo"
+            fin-caso
 
-      Fin
-    </pre>
+            default
+              resultado = "nada"
+            fin-default
 
-    <h2>Apuesta</h2>
-    <pre>
-      Inicio(shot1, shot2, shot3)
-        leer shot1
-        leer shot2
-        leer shot3
+          fin-segun sea
 
-        segun true sea
+        Fin
+      </pre>
+    </div>
+    
 
-          caso shot1 == shot2
-            resultado = "gané"
-          fin-caso
+    <div class="ejercicios">
+      <h2>Horario</h2>
+      <pre>
+        Inicio(día)
+          leer día
 
-          caso shot1 == shot3
-            resultado = "gané"
-          fin-caso
+          segun true sea
 
-          caso shot2 == shot3
-            resultado = "gané"
-          fin-caso
+            caso día == lunes or miércoles
+              Escribe "historia"
+            fin-caso
 
-          default
-            resultado = "perdí"
-          fin-default
+            caso día == martes
+              Escribe "natación"
+            fin-caso
 
-      Fin
+            caso día == jueves
+              Escribe "esgrima"
 
-    </pre>
+            default
+              Escribe "día de descanso"
+            fin-default
 
+        Fin
+      </pre>
+    </div>
+    
+    <div class="ejercicios">
+      <h2>Apuesta</h2>
+      <pre>
+        Inicio(shot1, shot2, shot3)
+          leer shot1
+          leer shot2
+          leer shot3
+
+          segun true sea
+
+            caso shot1 == shot2
+              resultado = "gané"
+            fin-caso
+
+            caso shot1 == shot3
+              resultado = "gané"
+            fin-caso
+
+            caso shot2 == shot3
+              resultado = "gané"
+            fin-caso
+
+            default
+              resultado = "perdí"
+            fin-default
+
+        Fin
+
+      </pre>
+
+    </div>
+    
 <!-- Inicio del terce ejercicio -->
 
-  <h2>Regaño</h2>
-  <pre>
-    Inicio(num1,num2)
-      leer num1
-      leer num2
+  <div class="ejercicios">
+    <h2>Regaño</h2>
+    <pre>
+      Inicio(num1,num2)
+        leer num1
+        leer num2
 
-      Para contador = num1 Hasta contador >= num2 Aumenta contador = contador + 1
-        escribe contador
-      
-      fin-para
+        Para contador = num1 Hasta contador >= num2 Aumenta contador = contador + 1
+          escribe contador
+        
+        fin-para
 
-    Fin
-  </pre>
+      Fin
+    </pre>
+  </div>
+  
+  <div class="ejercicios">
+    <h2>Peso</h2>
+    <pre>
+      Inicio(peso, peso_ideal, cambio_de_peso)
+        leer peso
+        leer peso_ideal
+        leer cambio_de_peso
 
-  <h2>Peso</h2>
-  <pre>
-    Inicio(peso, peso_ideal, cambio_de_peso)
-      leer peso
-      leer peso_ideal
-      leer cambio_de_peso
+        semanas = 0
 
-      semanas = 0
+        Mientras peso > peso_ideal
+          peso = peso - cambio_de_peso
+          semanas = semana + 1
+        fin-mientras
 
-      Mientras peso > peso_ideal
-        peso = peso - cambio_de_peso
-        semanas = semana + 1
-      fin-mientras
+        Escribe semanas
 
-      Escribe semanas
+      Fin
 
-    Fin
-
-  </pre>
+    </pre>
+  </div>
+  
   </body>
   
 </html>
