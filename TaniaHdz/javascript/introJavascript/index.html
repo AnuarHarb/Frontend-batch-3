@@ -1,13 +1,168 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <meta charset="utf-8">
     <title>De pseudocódigo a javascript</title>
   </head>
   <body>
     <h1>Ejercicios de javascript</h1>
+
+    <article class="dormi">
+      <h3>¿Cuántas horas dormí?</h3>
+      <h2>Si me dormí a las 23 horas y desperte a las 7 horas</h2>
+      <button onclick="horasDormidas(23, 7)">Ejecuta horas dormidas</button>
+      <div> 
+        <p class="resultado-horas-dormidas"></p>
+      </div>
+    </article>
+
+    <article class="sailor">
+      <div>
+        <img src="https://pa1.narvii.com/6355/07206e14d9569230b5a9c17f786ed3f5a7614d2c_hq.gif">
+      </div>
+    </article>
+    
+    <article class="gaste">
+      <h3>¿Cuánto gasté en el super?</h3>
+      <h2>Si, la sal cuesta $10, el azúcar $20, el cereal $30, el arroz $40 y el helado $50</h2>
+      <button onclick="precioSuper(10, 20, 30, 40, 50)">Ejecuta precio del super</button>
+      <div>
+        <p class="resultado-super"></p>
+      </div>
+    </article>
+
+    <article class="super">
+      <div>
+        <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2018310/rs_600x336-180410125814-The-Simpsons-APu.jpg?fit=inside|900:auto&output-quality=90">
+      </div>
+    </article>
+
+    <article>
+      <h3>¿Cuál es mi presupuesto del mes?</h3>
+        <h2>Si gano $1,500 y gasto $900?</h2>
+        <button onclick="presupuesto(500, 1000, 100, 300, 500)">Ejecuta presupuesto</button>
+        <div>
+          <p class="resultado-presupuesto"></p>
+        </div>
+    </article>
+
+    <article>
+      <h3>¿De cuánto es la herencia final?</h3>
+        <h2>Si, José tiene $100, Juan tiene $200 y la herencia es de $500?</h2>
+        <button onclick="herencia(100, 200, 500)">Ejecuta herencia</button>
+        <div> 
+          <p class="resultado-herencia"></p>
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Cuánto cueta la compu de Diego con IVA incluido?</h3>
+        <h2>Si, la compu cuesta $15,000</h2>
+        <button onclick="precioCompu(15000)">Ejecuta precio de la compu</button>
+        <div> 
+          <p class="resultado-precio"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Cuánto deberán de pagar con propina?</h3>
+        <h2>Si son 5 personas y la cuenta es de $1,500?</h2>
+        <button onclick="cuentaRestaurante(1500, 5)">Ejecuta cuenta del restaurante</button>
+        <div> 
+          <p class="resultado-cuenta"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>Si tienes hambre</h3>
+        <h2>¿Estas triste o feliz?</h2>
+        <button onclick="animo(false)">Ejecuta estado de ánimo</button>
+        <div> 
+          <p class="resultado-animo"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Qué nivel soy en el videojuego?</h3>
+        <h2>Si tengo 20 puntos</h2>
+        <button onclick="videoJuegos(20)">Ejecuta nivel</button>
+        <div> 
+          <p class="resultado-nivel"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>Tengo hambre, pero...</h3>
+        <h2>¿Cuál es el usuario y contraseña correcta?</h2>
+        <button onclick="refrigerador('Tania', 'Trickster')">Ejecuta acceso al refrigerador</button>
+        <div> 
+          <p class="resultado-datos"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Cuál es mi promedio final?</h3>
+        <h2>Si saque en mis exámenes: 8, 9 y 9</h2>
+        <button onclick="promedio(8, 9, 9)">Ejecuta promedio final</button>
+        <div> 
+          <p class="resultado-promedio"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Qué clase me toca?</h3>
+        <h2>Si hoy es jueves</h2>
+        <button onclick="horario('jueves')">Ejecuta horario</button>
+        <div> 
+          <p class="resultado-dia"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>Ganas la apuesta si sacas dos números iguales</h3>
+        <h2>Y tus resultados fueron:</h2>
+        <button onclick="apuesta(3, 1, 2)">Ejecuta apuesta</button>
+        <div> 
+          <p class="resultado-dado"></p> 
+        </div>
+    </article>
+
+    <article>
+      <h3>Me regañaron</h3>
+        <h2>Tendré que escribir del 1 al 10</h2>
+        <div> 
+          <button onclick="regaño(1, 10)">Ejecuta regaño</button>
+          <ul class="resultado-regaño"</ul>
+        </div>
+    </article>
+
+    <article>
+      <h3>¿Cuántas semanas tardaré en llegar a mi peso ideal?</h3>
+        <h2>Si peso 70, mi peso ideal es 56 y debo bajar 2 kilos por semana</h2>
+        <div> 
+          <button onclick="peso(70, 56, 2)">Ejecuta peso</button>
+          <ul class="resultado-peso"</ul>
+        </div>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <script src="assets/scripts.js"></script>
   </body>
