@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+  <section class="form">
+    <h1>Vs Computer</h1>
+    <a href="../index.html">Home</a>
+    <form action="" class="active">
+      <input type="radio" name="jugador" value="piedra" onclick="play(this.form)">
+      <input type="radio" name="jugador" value="papel" onclick="play(this.form)">
+      <label class="label__card" for="tijeras">
+        <img src="../assets/img/blaster_pvp.jpg" alt="">
+      </label>
+      <input id="tijeras" type="radio" name="jugador" value="tijera" onclick="play(this.form)">
+    </form>
+  </section>
+
+  <section class="winner">
+    <p>Ganó Obi One</p>
+    <img src="../assets/img/force_pvc.jpg" alt="">
+  </section>
+
+  <script src="../assets/index.js"></script>
+  </body>
+</html>

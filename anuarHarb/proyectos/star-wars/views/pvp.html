@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <h1>Jugador vs jugador</h1>
+    <a href="../index.html">home</a>
+
+    <form id="form1" action="">
+      <input type="radio" name="jugador" value="piedra">
+      <input type="radio" name="jugador" value="papel">
+      <input type="radio" name="jugador" value="tijera">
+    </form>
+
+    <form id="form2" action="">
+      <input type="radio" name="jugador" value="piedra" onclick="jugar(this.form)">
+      <input type="radio" name="jugador" value="papel" onclick="jugar(this.form)">
+      <input type="radio" name="jugador" value="tijera" onclick="jugar(this.form)">
+    </form>
+  </body>
+
+  <script src="../assets/index.js"></script>
+</html>
