@@ -15,6 +15,10 @@
   --header-height: 100px;
 }
 
+html {
+  background-color: black;
+}
+
 body {
   font-family: starjedi;
 }
@@ -81,7 +85,7 @@ body {
 }
 
 .player:hover {
-  background-image: url('img/lightsaber_tie_result.jpg');
+  background-image: url('img/landing-page/landing-vs.jpg');
 }
 
 .computer:hover {
@@ -95,35 +99,75 @@ body {
   padding: 10px 0;
 }
 
-.label__card {
-  border-radius: 4px;
-  display: block;
-  width: 300px;
-}
-
-.label__card img {
-  width: 100%;
-}
-
-#tijeras {
+/* Obi One Section */
+.obiOne__select {
+  background-image: radial-gradient(transparent, black), url('img/vs-computer/clone-background.jpg');
   display: none;
 }
 
-form {
-  display: none;
-}
-
-form.active {
+.obiOne__select.active {
   display: block;
 }
 
-.winner {
+.card__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: calc(100vh - 316px);
+}
+
+.card__label {
+  border: 10px solid gray;
+  border-radius: 10px;
+  background-color: gray;
+  cursor: pointer;
+  filter: brightness(.9);
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  width: 400px
+}
+
+.card__label:hover {
+  border-color: lightgray;
+  background-color: lightgray;
+  filter: brightness(1.2);
+}
+
+.card__label img {
+  border-radius: 10px;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.card__label:hover .card__title {
+  display: block;
+}
+
+.card__title {
+  bottom: 10px;
+  color: lightgray;
+  display: none;
+  font-size: 30px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 10px;
+}
+
+input {
   display: none;
 }
 
-.winner.active {
-  display: block;
+.obiOne__match {
+  background-image: radial-gradient(transparent, black), url('img/vs-computer/obi-background.jpeg');
+  background-position: top;
+  display: none;
 }
+
+.obiOne__match.active {
+  display: flex;
+}
+
 
 @media screen and (max-width: 800px) {
   .section__title {
@@ -135,7 +179,7 @@ form.active {
   }
 
   .player {
-    background-image: url('img/lightsaber_tie_result.jpg');
+    background-image: url('img/landing-page/landing-vs.jpg');
     background-position: center;
   }
 

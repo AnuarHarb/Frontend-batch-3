@@ -1,29 +1,45 @@
 <!Doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Star Wars</title>
     <link rel="stylesheet" href="../assets/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
   </head>
   <body>
-  <section class="form">
-    <h1>Vs Computer</h1>
-    <a href="../index.html">Home</a>
-    <form action="" class="active">
-      <input type="radio" name="jugador" value="piedra" onclick="play(this.form)">
-      <input type="radio" name="jugador" value="papel" onclick="play(this.form)">
-      <label class="label__card" for="tijeras">
-        <img src="../assets/img/blaster_pvp.jpg" alt="">
-      </label>
-      <input id="tijeras" type="radio" name="jugador" value="tijera" onclick="play(this.form)">
-    </form>
-  </section>
+    <header class="header">
+      <a href="../index.html">
+        <picture class="header__picture">
+          <img class="header__image" src="../assets/img/starwars-logo.jpg" alt="Star Wars logo">
+        </picture>
+      </a>
+    </header>
 
-  <section class="winner">
-    <p>Ganó Obi One</p>
-    <img src="../assets/img/force_pvc.jpg" alt="">
-  </section>
+    <section class="obiOne__select section active">
+      <h1 class="section__title">Select your weapon</h1>
+      <form action="" class="card__container active">
+        <label class="card__label card__clone" for="clones">
+          <img src="../assets/img/vs-computer/clone.jpg" alt="">
+          <h2 class="card__title">Clones</h2>
+        </label>
+        <label class="card__label" for="lightsaber">
+          <img src="../assets/img/vs-computer/lightsaber.jpg" alt="">
+          <h2 class="card__title">Lightsaber</h2>
+        </label>
+        <label class="card__label" for="force">
+          <img src="../assets/img/vs-computer/force.jpg" alt="">
+          <h2 class="card__title">Force</h2>
+        </label>
+        <input id="clones" type="radio" name="jugador" value="clones" onclick="vsComputer(this.form)">
+        <input id="lightsaber" type="radio" name="jugador" value="lightsaber" onclick="vsComputer(this.form)">
+        <input id="force" type="radio" name="jugador" value="force" onclick="vsComputer(this.form)">
+      </form>
+    </section>
 
-  <script src="../assets/index.js"></script>
+    <section class="obiOne__match section"></section>
+
+    <audio class="clone-sound" src="../assets/sounds/clone.ogx"></audio>
+
+    <script src="../assets/index.js"></script>
   </body>
 </html>
