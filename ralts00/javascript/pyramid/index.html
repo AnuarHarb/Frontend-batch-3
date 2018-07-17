@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Pyramid</title>
+</head>
+<body>
+  <form class="pyramid-contructor">
+    <label for="height-input">¿De que tamaño quieres tu piramide?</label>
+    <input type="number" id="heightInput" name="heightInput">
+    <button type="button" value="constructor" onclick="constructorPyramid(this.form)">Construir piramide</button>
+  </form>
+  <div class="pyramid">
+    <div class="step">
+      <span class="block placeholder"></span>
+    </div>
+  </div>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
