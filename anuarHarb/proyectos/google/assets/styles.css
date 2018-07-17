@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+}
+
+.happy{
+  background-color: yellow;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: lightgray;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.footer__row {
+  padding: 10px 20px;
+}
+
+.footer__border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.footer__link-group {
+  display: inline-block;
+}
+
+.align-right {
+  float: right;
+}
