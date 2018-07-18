@@ -1,331 +1,61 @@
 'use strict';
 
-function getResults() {
-  return 2;
-}
 
-const user = {
-  "results": [
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    },
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    },
-    'sadasda',
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    },
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    },
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    },
-    {
-      "gender": "male",
-      "name": {
-        "title": "mr",
-        "first": "rolf",
-        "last": "hegdal"
-      },
-      "location": {
-        "street": "ljan terrasse 346",
-        "city": "vear",
-        "state": "rogaland",
-        "postcode": "3095",
-        "coordinates": {
-          "latitude": "54.8646",
-          "longitude": "-97.3136"
-        },
-        "timezone": {
-          "offset": "-10:00",
-          "description": "Hawaii"
-        }
-      },
-      "email": "rolf.hegdal@example.com",
-      "login": {
-        "uuid": "c4168eac-84b8-46ea-b735-c9da9bfb97fd",
-        "username": "bluefrog786",
-        "password": "ingrid",
-        "salt": "GtRFz4NE",
-        "md5": "5c581c5748fc8c35bd7f16eac9efbb55",
-        "sha1": "c3feb8887abed9ec1561b9aa2c9f58de21d1d3d9",
-        "sha256": "684c478a98b43f1ef1703b35b8bbf61b27dbc93d52acd515e141e97e04447712"
-      },
-      "dob": {
-        "date": "1975-11-12T06:34:44Z",
-        "age": 42
-      },
-      "registered": {
-        "date": "2015-11-04T22:09:36Z",
-        "age": 2
-      },
-      "phone": "66976498",
-      "cell": "40652479",
-      "id": {
-        "name": "FN",
-        "value": "12117533881"
-      },
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/65.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-      },
-      "nat": "NO"
-    }
-  ],
-  "info": {
-    "seed": "2da87e9305069f1d",
-    "results": getResults,
-    "page": 1,
-    "version": "1.2"
-  }
+const promise = fetch('https://rickandmortyapi.com/api/character/');
+
+const tagDivContainer = document.querySelector('.container');
+
+const tagDivHeader = (character, tagDiv) => {
+  
+  const tagImg = document.createElement('img');
+  tagImg.src = character.image;
+  tagImg.alt = character.name;
+  tagImg.classList.add('radius-image');
+  tagDiv.appendChild(tagImg);
+  
+  
 };
 
-console.log(user.info.results());
+const tagDivBody = (name, tagDiv) => {
+  const tagH2 = document.createElement('h2');
+  tagH2.innerText = name;
+  tagDiv.appendChild(tagH2);
+};
+
+const tagDivFooter = (property, value, tagDiv) => {
+  const tagItem = document.createElement('div');
+  tagItem.classList.add('item');
+  const tagH3 = document.createElement('h3');
+  const tagP = document.createElement('p');
+  tagH3.innerText = property;
+  tagP.innerText = value;
+  tagItem.appendChild(tagH3);
+  tagItem.appendChild(tagP);
+  tagDiv.appendChild(tagItem);
+};
+
+
+promise
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(objectData) {
+    const characters = objectData.results;
+    for (const character of characters) {
+      const tagDiv = document.createElement('div');
+      tagDiv.classList.add('card');
+      tagDivHeader(character, tagDiv);
+      tagDivBody(character.name, tagDiv);
+      const tagFooter = document.createElement('div');
+      tagDivFooter('Estatus', character.status, tagFooter);
+      tagDivFooter('Especie', character.species, tagFooter);
+      tagDivFooter('Genero', character.gender, tagFooter);
+      tagFooter.classList.add('footer-container');
+      tagDiv.appendChild(tagFooter);
+      tagDivContainer.appendChild(tagDiv);
+    }
+  })
+  .catch(function(reason) {
+    console.error(reason);
+    
+  });
