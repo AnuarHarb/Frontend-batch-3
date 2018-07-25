@@ -1,0 +1,14 @@
+body {
+
+}
+
+.form {
+
+}
+
+.result-fibonacci {
+	padding-top: 25%;
+	font-size: 50px;
+	color: white;
+	background-image: url('Concha-con-la-forma-de-la-espiral-de-Fibonacci.jpg');
+}

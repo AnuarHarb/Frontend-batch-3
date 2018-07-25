@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta charset="utf-8">
+	<title>De pseudocódigo a Javascript </title>
+</head>
+<body>
+	<div class="portada">
+		<h1>Ejercicios de Javascript</h1>
+	</div>
+
+	<div class="pLinea"> 
+		<div class="primeraLinea">
+			<article class="dormir24">
+				<h3>Ejercicio Dormir 24 horas</h3>
+				<div class="dormir-despertar">
+					<label class="labelDormir">Dormir: </label>
+					<input type="text" id="dormir">
+				</div>
+				<div class="dormir-despertar">
+					<label class="labelDespertar">Despertar: </label>
+					<input type="text" id="despertar">
+				</div>
+				<button onclick="dormir24()">Ejecuta Dormir</button>
+				<div class="resultado-dormir24"></div>
+			</article>
+		</div>
+
+		<div class="primeraLinea">
+			<article class=dormir12>
+				<h3>Ejercicio Dormir 12 horas</h3>
+				<label>Dormir: </label>
+				<input type="text" id="dormir12">
+				<label>Despertar: </label>
+				<input type="text" id="despertar12">
+				<button onclick="dormir12()">Ejecutar Dormir</button>
+				<div class="resultado-dormir12"></div>
+			</article>
+		</div>
+
+		<div class="primeraLinea">
+			<article class="super">
+				<h3>Ejercicio Total del Super</h3>
+				<form name="formulario">
+					<label>Precio sal $ </label>
+					<input type="number" name="sal">
+					<label>Precio azúcar $</label>
+					<input type="number" name="azucar">
+					<label>Precio cereal $</label>
+					<input type="number" name="cereal">
+					<label>Precio arroz $</label>
+					<input type="number" name ="arroz">
+					<label>Precio helado $</label>
+					<input type="number" name ="helado">
+					<button type="button" onclick="totalSuper(this.form.sal.value, this.form.azucar.value, this.form.cereal.value, this.form.arroz.value, this.form.helado.value)">Ejecutar Total del super</button>
+					<div class="resultado-total-super"></div>
+				</form>
+			</article>
+		</div>
+	</div>
+
+	<article>
+		<h3>Ejercicio Presupuesto</h3>
+		<form name="formulario">
+			<label>Ingreso1: </label>
+			<input type="text" name="ingreso1">
+			<label>Ingreso2: </label>
+			<input type="text" name="ingreso2">
+			<label>Gasto1: </label>
+			<input type="text" name="gasto1">
+			<label>Gasto2: </label>
+			<input type="text" name ="gasto2">
+			<label>Gasto3: </label>
+			<input type="text" name ="gasto3">
+			<button type="button" onclick="presupuesto(this.form.ingreso1.value, this.form.ingreso2.value, this.form.gasto1.value, this.form.gasto2.value, this.form.gasto3.value)">Ejecutar Presupuesto</button>
+			<div class="resultado-presupuesto"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Herencia</h3>
+		<form name="formulario">
+			<label>José: </label>
+			<input type="text" name="jose">
+			<label>Juan: </label>
+			<input type="text" name="juan">
+			<label>Herencia: </label>
+			<input type="text" name="herencia">
+			<button type="button" onclick="herencia(this.form.jose.value, this.form.juan.value, this.form.herencia.value)">Ejecutar Herencia</button>
+			<div class="resultado-herencia"></div>
+			<div class="resultado-jose"></div>
+			<div class="resultado-juan"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Memify-Startup</h3>
+		<form name="formulario">
+			<label>El valor del Startup es: </label>
+			<input type="text" name="startup">
+			<button type="button" onclick="memify(this.form.startup.value)">Ejecutar Memify Startup</button>
+			<div class="resultado-memify-socio1"></div>
+			<div class="resultado-memify-socio2"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio CompuDiego</h3>
+		<form name="formulario">
+			<label>Precio computadora: </label>
+			<input type="text" name="computadora">
+			<button type="button" onclick="compuDiego(this.form.computadora.value)">Ejecutar CompuDiego</button>
+			<div class="resultado-computadora"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Restaurante</h3>
+		<form name="formulario">
+			<label>Precio a pagar: </label>
+			<input type="text" name="precio">
+			<label># de Individuos: </label>
+			<input type="text" name="individuos">
+			<button type="button" onclick="restaurante(this.form.precio.value, this.form.individuos.value)">Ejecutar Restaurante</button>
+			<div class="resultado-restaurante-total"></div>
+			<div class="resultado-restaurante-individuos"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Feliz Hambre</h3>
+		<form name="formulario">
+			<label>¿Tienes hambre? </label>
+			<input type="text" name="hambre">
+			<button type="button" onclick="felizHambre(this.form.hambre.value)">Ejecutar Hambre</button>
+			<div class="resultado-hambre"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Videojuego</h3>
+		<form name="formulario">
+			<label>¿Qué nivel eres? </label>
+			<input type="text" name="nivel">
+			<button type="button" onclick="totalSuper(this.form.nivel.value)">Ejecutar nivel de Videojuego</button>
+			<div class="resultado-videojuego"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Abrir refrigerador</h3>
+		<form name="formulario">
+			<label>Nombre: </label>
+			<input type="text" name="nombre">
+			<label>Contraseña: </label>
+			<input type="text" name="contrasenia">
+			<button type="button" onclick="totalSuper(this.form.nombre.value, this.form.contrasenia.value)">Ejecutar Abrir Refrigerador</button>
+			<div class="resultado-refrigerador"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Promedio</h3>
+		<form name="formulario">
+			<label>Cal. examén 1: </label>
+			<input type="text" name="examen1">
+			<label>Cal. examén 2: </label>
+			<input type="text" name="examen2">
+			<label>Cal. examén 3: </label>
+			<input type="text" name="examen3">
+			<button type="button" onclick="totalSuper(this.form.examen1.value, this.form.examen2.value, this.form.examen3.value)">Ejecutar Abrir Refrigerador</button>
+			<div class="resultado-promedio"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Horario</h3>
+		<form name="formulario">
+			<label>Horario: </label>
+			<input type="text" name="horario">
+			<button type="button" onclick="totalSuper(this.form.horario.value)">Ejecutar Abrir Refrigerador</button>
+			<div class="resultado-horario"></div>
+		</form>
+	</article>
+
+	<article>
+		<h3>Ejercicio Apuesta</h3>
+		<form name="formulario">
+			<label>Dado1: </label>
+			<input type="text" name="dado1">
+			<label>Dado2: </label>
+			<input type="text" name="dado2">
+			<label>Dado3: </label>
+			<input type="text" name="dado3">
+			<button type="button" onclick="totalSuper(this.form.dado1.value, this.form.dado2.value, this.form.dado3.value)">Ejecutar apuesta</button>
+			<div class="resultado-apuesta"></div>
+		</form>
+	</article>
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="assets/scripts.js"></script>
+</body>
+</html>

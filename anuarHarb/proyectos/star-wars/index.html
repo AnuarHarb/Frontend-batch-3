@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <header class="header">
+      <picture class="header__picture">
+        <img class="header__image" src="assets/img/starwars-logo.jpg" alt="Star Wars logo">
+      </picture>
+    </header>
+
+
+    <section class="section">
+      <h1 class="section__title">Choose your path</h1>
+      <div class="section__container">
+        <a class="section__card player" href="views/pvp.html">Jedi vs Sith</a>
+        <a class="section__card computer" href="views/computer.html">Challenge obi-one</a>
+      </div>
+      <footer>
+        <h3 class="footer__text">Republic Edition</h3>
+      </footer>
+    </section>
+
+    <audio class="lightsaber-audio" src="assets/sounds/lightsaber.wav"></audio>
+    <audio class="hello-audio" src="assets/sounds/hello-there.ogg"></audio>
+
+    <script src="assets/index.js"></script>
+    <script>
+      const playerButton = document.querySelector('.player');
+      const computerButton = document.querySelector('.computer');
+      // audios
+      const lightsaberSound = document.querySelector('.lightsaber-audio');
+      const helloSound = document.querySelector('.hello-audio');
+
+      playerButton.addEventListener('mouseover', playLightsaber);
+      playerButton.addEventListener('mouseleave', stopLightsaber);
+      computerButton.addEventListener('mouseover', playHello);
+      computerButton.addEventListener('mouseleave', stopHello);
+
+      function playLightsaber() {
+        lightsaberSound.play();
+      }
+
+
+      function stopLightsaber() {
+        lightsaberSound.pause();
+        lightsaberSound.currentTime = 0;
+      }
+
+      function playHello() {
+        helloSound.play();
+      }
+
+      function stopHello() {
+        helloSound.pause();
+        helloSound.currentTime = 0;
+      }
+
+    </script>
+  </body>
+</html>
