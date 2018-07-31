@@ -1,0 +1,30 @@
+body {
+  background-color: #FAFBFB;
+  margin: 30px;
+  background-image: url('https://www.hdwallpapers.in/download/windows_xp_bliss-1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+section {
+  width: 380px;
+  background-color: #D6D6CE;
+  padding: 3px;
+  box-shadow: inset -1px -1px 2px 1px #4E4E4E80;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
+  color: #122346;
+  font-size: 16px;
+  height: 280;
+  background-color: #0A1F7B;
+  color: #fff;
+  padding: 2px;
+}
+
+div {
+  padding: 2px 8px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudocódigo a JS</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios JS</h1>
+    </header>
+    <h2>Nivel 1</h2>
+    <article class="excercie-1">
+      <div class="problem">
+        <h3>Horas dormidas AM/PM</h3>
+        <p>
+          ¿Cuántas horas dormiste?
+          <br>
+          De las 7am a las 12am
+        </p>
+        <button onclick="horasDormidas12(7,12)" class="playJS">Calcular</button>
+      </div>
+      <div class="result resultado-horas-dormidas-12">
+      </div>
+    </article>
+    <article class="excercie-2">
+      <div class="problem">
+        <h3>Horas dormidas 24hrs</h3>
+        <p>
+          ¿Cuántas horas dormiste?
+          <br>
+          De las 18hrs a las 12hrs del día
+        </p>
+        <button onclick="horasDormidas24(18,12)" class="playJS">Calcular</button>
+      </div>
+      <div class="result resultado-horas-dormidas-24">
+      </div>
+    </article>
+    <article class="excercie-3">
+      <div class="problem">
+        <h3>Precio super</h3>
+        <p>
+          ¿Cuánto pagas si compras...?
+          <br>
+          <ul>
+            <li>Sal $12</li>
+            <li>Azucar $15</li>
+            <li>Cereal $13</li>
+            <li>Arroz $12</li>
+            <li>Helado $10</li>
+          </ul>
+        </p>
+        <button onclick="precioSuper(12,15,13,12,10)" class="playJS">Calcular</button>
+      </div>
+      <div class="result resultado-precio-super">
+      </div>
+    </article>
+    <h2>Nivel 2</h2>
+    <article class="excercie-13">
+      <div class="problem">
+        <h3>Apuesta Random</h3>
+        <p>
+          ¿Apostamos?
+          <br>
+          Si tienes mínimo 2 dados iguales ganas.
+        </p>
+        <button onclick="apuestaRandom()" class="playJS">Tira los dados</button>
+      </div>
+      <div class="result">
+        <span class="resultado-apuesta-random"></span>
+        <div class="dice-1 dice dice-for-3 dice-animation">
+          <div class="row-one">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-two">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-three">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="dice-2 dice dice-for-6 dice-animation">
+          <div class="row-one">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-two">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-three">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="dice-3 dice dice-for-2 dice-animation">
+          <div class="row-one">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-two">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="row-three">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>

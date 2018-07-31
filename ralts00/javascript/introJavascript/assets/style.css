@@ -1,0 +1,298 @@
+:root {
+  --primary-color: #ea2470;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #32363E;
+  color: white;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 10rem;
+  margin: 0;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  height: 60vh;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-right: 5rem;
+  font-weight: 300;
+  text-align: right;
+  border-bottom: 1px solid #111315;
+  padding-bottom: 2rem;
+}
+
+article {
+  padding: 3rem;
+  border-radius: .5rem;
+  transition: all .3s;
+  margin: 3rem 5rem;
+  vertical-align: middle;
+}
+
+article:hover {
+  margin: 3rem 0;
+  border-radius: 0;
+}
+
+.excercie-1 {
+  background-image: linear-gradient(45deg, #626FDD, #E1A4E7);
+}
+
+.excercie-2 {
+  background-image: linear-gradient(45deg, #61C381, #bfda2a);
+}
+
+.excercie-3 {
+  background-image: linear-gradient(45deg, #E91E63, #e91ebd);
+}
+
+.excercie-13 {
+  background-image: linear-gradient(45deg, #4a4b4e, #32363E);
+}
+
+.excercie-13 .result {
+  color: #fff;
+}
+
+.problem {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 48%;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.playJS {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  color:  white;
+  font-weight: 300;
+  border-radius: .25rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.playJS:focus {
+  outline: none;
+}
+
+.result {
+  display: inline-block;
+  width: 50%;
+  font-size: 2rem;
+  text-align: right;
+  color: rgba(1, 1, 1, .5);
+}
+
+li {
+  font-size: 1rem;
+}
+
+@keyframes diceRoll {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(50deg) scale(1.2);
+  }
+
+
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+.dice {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: .3rem;
+  padding: 10px;
+  margin-left: 2rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: top;
+}
+
+.dice-animation {
+  animation: diceRoll .8s;
+  animation-direction: reverse;
+}
+
+.dot {
+  background-color: #EA4E66;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: none;
+  font-size: 6px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.row-one,
+.row-two,
+.row-three {
+  display: none;
+}
+
+/* For 1 */
+.dice-for-1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-for-1 .row-one {
+  display: block;
+}
+
+.dice-for-1 .dot:first-child{
+  display: block;
+}
+
+/* For 2 */
+
+.dice-for-2 .row-one,
+.dice-for-2 .row-three {
+  display: flex;
+}
+
+.dice-for-2 .row-one .dot:first-child,
+.dice-for-2 .row-three .dot:last-child{
+  display: block;
+}
+
+.dice-for-2 .row-one {
+  align-self: flex-end;
+}
+
+/* For 3 */
+
+.dice-for-3 .row-one,
+.dice-for-3 .row-two,
+.dice-for-3 .row-three {
+  display: flex;
+}
+
+.dice-for-3 .row-one .dot:first-child,
+.dice-for-3 .row-two .dot:nth-child(2),
+.dice-for-3 .row-three .dot:last-child{
+  display: block;
+}
+
+.dice-for-3 .row-one {
+  align-self: flex-end;
+}
+
+.dice-for-3 .row-two {
+  align-self: center;
+}
+
+/* For 4 */
+
+.dice-for-4 {
+  flex-direction: column;
+}
+
+.dice-for-4 .row-one,
+.dice-for-4 .row-three {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-for-4 .dot {
+  display: block;
+}
+
+.dice-for-4 .row-one .dot:nth-child(2),
+.dice-for-4 .row-three .dot:nth-child(2) {
+  display: none;
+}
+
+/* For 5 */
+
+.dice-for-5 {
+  flex-direction: column;
+}
+
+.dice-for-5 .row-one,
+.dice-for-5 .row-two,
+.dice-for-5 .row-three {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-for-5 .dot {
+  display: block;
+}
+
+.dice-for-5 .row-one .dot:nth-child(2),
+.dice-for-5 .row-two .dot:first-child,
+.dice-for-5 .row-two .dot:last-child,
+.dice-for-5 .row-three .dot:nth-child(2)
+ {
+  display: none;
+}
+
+.dice-for-5 .row-two {
+  justify-content: center;
+}
+
+/* For 6 */
+
+.dice-for-6 {
+  flex-direction: column;
+}
+
+.dice-for-6 .row-one,
+.dice-for-6 .row-two,
+.dice-for-6 .row-three {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-for-6 .dot {
+  display: block;
+}
+
+.dice-for-6 .row-one .dot:nth-child(2),
+.dice-for-6 .row-two .dot:nth-child(2),
+.dice-for-6 .row-three .dot:nth-child(2)
+ {
+  display: none;
+}
+
+.dice-win {
+  background-color: #F9C733;
+}
+
+.dice-win .dot {
+  background-color: #32363E;
+}
