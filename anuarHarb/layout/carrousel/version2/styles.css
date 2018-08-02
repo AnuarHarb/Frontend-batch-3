@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.carrousel {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.carrousel__container {
+  border: 2px solid black;
+  display: inline-block;
+  height: 300px;
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+}
+
+.carrousel__picture {
+  background-size: cover;
+  background-position: center;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.carrousel__button {
+  background-color: #0003;
+  border: 0;
+  font-size: 30px;
+  color: white;
+  border-radius: 40px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 40px;
+}
+
+.next {
+  right: 0;
+}
+
+.preview {
+  left: 0;
+}
+
+.carrousel__button:focus {
+  outline: none;
+}
+
+.perrito1 {
+  background-image: url('img/perrito1.webp');
+}
+
+.perrito2 {
+  background-image: url('img/perrito2.jpg');
+}
+
+.perrito3 {
+  background-image: url('img/perrito3.jpg');
+}
+
+.active {
+  display: inline-block;
+}
+
+.carrousel__picture img {
+  width: 100%;
+}
