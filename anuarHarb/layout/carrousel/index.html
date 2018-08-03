@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="carrousel">
+    <button class="preview">Anterior</button>
+    <article class="carrousel__container">
+      <picture class="active carrousel__image" data-target="0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46QKChniQ_KAwQZ7oHH5BN1ypFtg3g_Tzi6Zh4Q9tj8HLj04W" alt="">
+      </picture>
+      <picture class="carrousel__image" data-target="1">
+        <img src="https://cdn.now.howstuffworks.com/media-content/0c019379-1bcf-4914-b357-0667cd364690-640-360.jpg" alt="">
+      </picture>
+      <picture class="carrousel__image" data-target="2">
+        <img src="https://qph.fs.quoracdn.net/main-qimg-1db2bcfeb52b8a3b6b92d116afcd06fc" alt="">
+      </picture>
+    </article>
+    <button class="next">Siguente</button>
+  </section>
+  <ul class="carrousel__dots">
+    <li class="dot" data-target="0"></li>
+    <li class="dot" data-target="1"></li>
+    <li class="dot" data-target="2"></li>
+  </ul>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

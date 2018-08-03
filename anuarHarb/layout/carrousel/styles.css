@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.carrousel {
+  text-align: center;
+}
+
+.carrousel__container {
+  display: inline-block;
+  height: 300px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.carrousel__image.active {
+  display: inline-block;
+}
+
+.carrousel__image {
+  display: none;
+  width: 400px;
+}
+
+.carrousel__image img {
+  height: 100%;
+}
+
+.carrousel__dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.dot {
+  background-color: red;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 20px;
+  margin: 0 10px;
+  width: 20px;
+}
