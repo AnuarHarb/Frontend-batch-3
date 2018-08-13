@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesejerc2.css">
+    <meta charset="utf-8">
+    <title>EJercicio 2 Algoritmia</title>
+  </head>
+
+  <body >
+    <h1>ALGORITMIA, EJERCICIO 2</h1>
+
+  <div>
+    <h2>Felicidad o hambre</h2>
+    <pre>
+      Inicio (hambre)
+        leer hambre
+
+        si hambre == true
+          Escribe "estoy triste"
+        sino
+          Escribe "Estoy feliz"
+
+        fin si
+      Fin
+    </pre>
+  </div>
+  <div>
+    <h2>Nivel de Videojuego</h2>
+    <pre>
+      Inicio (nivel)
+        leer nivel
+
+        si nivel >= 10 & nivel < 20
+          Escribe "Nivel Acrobata"
+
+        sino nivel >= 20
+          Escribe "Nivel Ninja"
+
+        sino
+          Escribe "Nivel Aprendiz"
+
+        fin si
+      Fin
+
+    </pre>
+  </div>
+  <div>
+    <h2>Refrigerador</h2>
+    <pre>
+      Inicio (usuario, contraseña)
+        leer usuario
+
+        si usuario == true entonces
+          Si contraseña == true
+            escribe "acceso a Refrigerador"
+          sino
+            ESCRIBE "CONTRASEÑA INCORRECTA"
+          FIN SI
+        sino
+          Escribe "usuario no existe"
+
+        fin si
+      Fin
+    </pre>
+  </div>
+  <div class="dos">
+    <h2>Promedio</h2>
+    <pre>
+      Inicio (calexamen1, calexamen2, calexamen3)
+        leer calexamen1
+        leer calexamen2
+        leer calexamen3
+
+        promedio = (calexamen1 + calxamen2 + calexamen3) / 3
+
+        si promedio >= 8.5
+          escribe "Destino Premio"
+
+        sino
+          Escribe "Destino Castigo"
+
+        fin si
+      Fin
+    </pre>
+  </div>
+  <div class="tres">
+    <h2>¿Que clase tengo hoy?</h2>
+    <pre>
+      Inicio (día)
+        leer día
+
+        segun día sea
+          caso lunes:
+            Escribe "clase de historia"
+          fin-caso
+          caso martes:
+            Escribe "clase de Natación"
+          fin-caso
+          caso miercoles
+            Escribe "clase de historia"
+          fin-caso
+          caso jueves
+            Escribe "clase de esgrima"
+          fin-caso
+          caso viernes
+            Escribe "descanso"
+          fin-caso
+          caso sabado
+            Escribe "descanso"
+          fin-caso
+          caso domingo
+            Escribe "descanso"
+          fin-caso
+        fin segun sea
+      Fin
+    </pre>
+  </div>
+  <div class="tres">
+    <h2>Juego de Dados</h2>
+    <pre>
+      Inicio (dado1, dado2, dado3)
+        leer dado1
+        leer dado2
+        leer dado3
+
+        si dado1 == dado2 or dado1 == dado3 or dado2 == dado3
+          escribe "ganaste"
+
+        sino
+          Escribe "perdiste"
+        fin si
+      Fin
+    </pre>
+  </div>
+  <div class="cuatro">
+    <h2>Regaño</h2>
+    <pre>
+      inicio (num1, num2)
+        leer num1
+        leer num2
+
+        para contador = num1 Hasta contador >= num2 Aumenta contador = contador + 1
+          Escribe "contador"
+        fin para
+    </pre>
+  </div>
+  <div class="cuatro">
+    <h2>Regaño</h2>
+    <pre>
+      inicio (num1, num2)
+        leer num1
+        leer num2
+
+        contador =  num1
+
+        mientras contador <= num2 entonces
+          escribe contador
+          contador = num1 + 1
+        fin mientres
+    </pre>
+  </div>
+  <div class="cinco">
+    <h2>Peso</h2>
+    <pre>
+      Inicio (peso, pesoIdeal, cambioDePeso)
+        leer peso
+        leer pesoIdeal
+        leer cambioDePeso
+        semana = 0
+
+        mientras peso > pesoIdeal
+          escribe peso
+          escribe semana
+          peso = peso - cambioDePeso
+          semana = semana + 1
+        fin-Mientras
+      fin
+    </pre>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesejerc1.css">
+    <meta charset="utf-8">
+    <title>pruebaAlgoritmo</title>
+  </head>
+
+  <body>
+
+    <h1>EJERCICIO 1</h1>
+
+    <div class="wrapper">
+      <div class="box1">
+        <h2>Ejercicio horas sueño</h2>
+        <pre>
+          Inicio(dormir, despertar)
+            leer dormir
+            leer despertar
+
+            Si dormir > 12
+              horasDormidas = (24 - dormir) + despertar
+            Sino
+             horasDormidas = despertar - dormir
+            fin-si
+
+          Escribe horasDormidas
+          Fin
+        </pre>
+      </div>
+
+      <div class="box2">
+        <h2>Ejercicio gasto del super</h2>
+        <pre>
+          Inicio (precioSal, precioAzucar, precioCereal, precioArroz, precioHelado)
+            leer precioSal
+            leer precioAzucar
+            leer precioCereal
+            leer precioArroz
+            leer precioHelado
+
+            GastoDelSuper = precioSal + precioAzucar + precioCereal + precioArroz + precioHelado
+
+            Escribe GastoDelSuper
+          Fin
+        </pre>
+      </div>
+
+      <div class="box3">
+        <h2>Ejercicio presupuesto</h2>
+        <pre>
+          Inicio (ingreso1, ingreso2, gasto1, gasto2, gasto3)
+            leer ingreso1
+            leer ingreso2
+            leer gasto1
+            leer gasto2
+            leer gasto3
+
+            TotalGasto = gasto1 + gasto2 + gasto3
+
+            TotalIngreso = Ingreso1 + Ingreso2
+
+            Presupuesto = TotalIngreso-TotalGasto
+
+            Escribe Presupuesto
+          Fin
+        </pre>
+      </div>
+      <div class="box4">
+        <h2>Herencia</h2>
+        <pre>
+          Inicio (dineroJuan, dineroJose, Herencia)
+            leer dineroJuan
+            leer dineroJose
+            leer Herencia
+
+            RepartoHerencia= Herencia/2
+
+            totaldineroJuan= dineroJuan+RepartoHerencia
+
+            totaldineroJose= dineroJose+RepartoHerencia
+
+            totalJoseJuan= totaldineroJose+totalJoseJuan
+
+            Escribe totalJoseJuan
+            Escribe totaldineroJose
+            Escribe totalJoseJuan
+          Fin
+        </pre>
+      </div>
+      <div class="box5">
+        <h2>Startup</h2>
+        <pre>
+          Inicio (precioStartup, porcentajeSocio1, porcentajeSocio2)
+            leer precioStartup
+            leer porcentajeSocio1
+            leer porcentajeSocio2
+
+            Reparto1Startup= precioStartup * .porcentajeSocio1
+            Reparto1Startup= precioStartup * .porcentajeSocio1
+
+            ganancia1SinIva= Reparto1Startup - (Reparto1Startup * 0.16)
+            ganancia2SinIva= Reparto2Startup - (Reparto2Startup * 0.16)
+
+            Escribe ganancia1SinIva
+            Escribe ganancia2SinIva
+          Fin
+
+        </pre>
+      </div>
+      <div class="box6">
+        <h2>Precio Computadora</h2>
+        <pre>
+          Inicio (precioLap, iva)
+            leer precioLap
+            leer iva
+
+            TotalConIva= precioLap + ((precioLap * iva)/100)
+
+            Escribe TotalConIva
+          Fin
+        </pre>
+      </div>
+      <div class="box7">
+        <h2>Cuenta restaurante</h2>
+        <pre>
+          Inicio (NumComensales, total, propina)
+            leer NumComensales
+            leer total
+            leer propina
+
+            TotalPorComensal= total / NumComensales
+
+            totalPorcomensalMasPropina= TotalPorComensal + ((TotalPorComensal * propina)/100)
+
+            Escribe totalPorComensalMasPropina
+          Fin
+        </pre>
+      </div>
+  </body>
+</html>

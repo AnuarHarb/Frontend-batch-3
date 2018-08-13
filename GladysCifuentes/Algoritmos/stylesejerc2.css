@@ -1,0 +1,56 @@
+html{
+  front-size:16px;
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+h2 {
+  text-align: center;
+}
+div{
+  display: inline-block;
+  width: 30%;
+  height: 350px;
+  margin: 0.2%;
+  background-color: #A3FC44;
+  vertical-align: top;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.dos {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0.5%;
+  background-color: #00FFFF;
+}
+.tres {
+  display: inline-block;
+  width: 48%;
+  height: 600px;
+  text-decoration: underline;
+  margin: 0.5%;
+  background-color: #00FFFF;
+}
+.cuatro {
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+  margin: 0.5%;
+  background-color: #E30660;
+}
+.cinco {
+  display: inline-block;
+  width: 30%;
+  height: 350px;
+  margin: 0.5%;
+  background-color: #E30660;
+  vertical-align: bottom;
+}
+pre {
+  color: black;
+  white-space: pre-wrap;
+  font-weight: bold;
+  font-family: 'Jua', sans-serif;
+}
