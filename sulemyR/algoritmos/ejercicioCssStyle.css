@@ -1,0 +1,48 @@
+body {
+	background-color: #87CEFA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: palevioletred;
+	padding: 2%;
+	background-color: grey;
+}
+
+.Centrar {
+	text-align: center;
+}
+
+.formatoGeneral {
+	background-color: #778899;
+	display: inline-block;
+	vertical-align: top;
+	padding: .5%;
+	margin: .5%;
+	height: 455px;
+	border-radius: 40px;
+	text-align: left;
+}
+
+.divisionTres {
+	width: 30%
+}
+
+.divisionDos {
+	width: 40%
+}
+
+.divisionUno {
+	width: 80%
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+h2 {
+	border-bottom: dashed;
+	text-align:  center
+}
+
